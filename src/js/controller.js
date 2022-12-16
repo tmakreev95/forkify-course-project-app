@@ -100,6 +100,14 @@ const controllAddRecipe = async function (newRecipe) {
   }
 };
 
+const controlDeleteRecipe = function (recipeId) {
+  try {
+    console.log(recipeId);
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks)
   recipeView.addHandlerRender(controlRecipes);
